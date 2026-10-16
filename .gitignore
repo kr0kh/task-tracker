@@ -1,0 +1,8 @@
+# .gitignore - файлы, не попадающие в репозиторий
+node_modules/
+.env
+*.log
+tasks.csv
+*.csv
+.DS_Store
+.vscode/

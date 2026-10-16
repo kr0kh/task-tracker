@@ -1,0 +1,26 @@
+{
+  "name": "task-tracker",
+  "version": "1.0.0",
+  "description": "Серверная часть приложения Task Tracker (УП.03.01)",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "check": "npm run test:crud && npm run test:api && npm run test:export && npm run test:client",
+    "test:crud": "node scripts/testCrud.js",
+    "test:api": "node scripts/checkApi.js",
+    "test:export": "node scripts/checkExport.js",
+    "test:client": "node scripts/checkClient.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": true
+}

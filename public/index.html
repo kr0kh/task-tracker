@@ -1,0 +1,22 @@
+<!-- public/index.html - минимальная стартовая страница -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Task Tracker</title>
+</head>
+<body>
+    <h1>Task Tracker</h1>
+    <p>Серверная часть приложения для постановки и контроля рабочих задач.</p>
+    <p>Работа с данными выполняется через REST API:</p>
+    <ul>
+        <li>GET /api/health - проверка работоспособности сервиса</li>
+        <li>POST /api/auth/login - получение токена доступа</li>
+        <li>GET /api/tasks - список задач</li>
+        <li>GET /api/tasks/:id - задача по идентификатору</li>
+        <li>POST /api/tasks - создание задачи</li>
+        <li>PATCH /api/tasks/:id - изменение задачи</li>
+        <li>DELETE /api/tasks/:id - удаление задачи</li>
+    </ul>
+</body>
+</html>
